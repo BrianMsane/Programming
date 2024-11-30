@@ -71,6 +71,7 @@ void viewCidDataByDisease(string filename1, string filename2, int code){
             dis_data.close();
         }
         cid_data.close();
+
         drawLine("=", 100);
         std::cout << std::setw(10) << "TOTALS"
             << std::setw(80) << ""
