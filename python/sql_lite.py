@@ -4,7 +4,7 @@ from pathlib import Path
 
 movies = json.loads(Path("movies.json").read_text())
 
-# write data to DF
+# write data to DB
 with sqlite3.connect("db.sqlite3") as conn:
     command = "INSERT INTO movies VALUES(?, ?, ?)"
     for movie in movies:
