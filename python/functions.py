@@ -1,19 +1,18 @@
-
 def calculator(a: int, b: int, op: str):
-    if op in ('+','plus', 'add', 'addition'):
+    if op in ("+", "plus", "add", "addition"):
         return a + b
-    elif op in ('-', 'minus', 'subtract', 'subtraction'):
+    elif op in ("-", "minus", "subtract", "subtraction"):
         return a - b
-    elif op in ('/', 'quotient', 'divide', 'division'):
+    elif op in ("/", "quotient", "divide", "division"):
         return a / b
-    elif op in ('*', 'product', 'times', 'multiply', 'multiplication'):
+    elif op in ("*", "product", "times", "multiply", "multiplication"):
         return a * b
-    elif op in ('%', 'modulus', 'remainder'):
+    elif op in ("%", "modulus", "remainder"):
         return a % b
-    elif op in ('//', 'floor division'):
+    elif op in ("//", "floor division"):
         return a // b
     else:
-        return 'Oops!'
+        return "Oops!"
 
 
 print("Enter two numbers and an operation to be made on them")
@@ -23,15 +22,17 @@ op = input()
 
 print(calculator(num1, num2, op))
 
+
 # generators
 def odd_squares_sum(limit):
     current_odd = 1
     total_sum = 0
 
     while True:
-        total_sum += current_odd ** 2
+        total_sum += current_odd**2
         yield total_sum
         current_odd += 2
+
 
 limit = 10  # Set your desired limit
 generator = odd_squares_sum(limit)
