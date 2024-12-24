@@ -11,7 +11,7 @@ The type of the values is determined at runtime based on the value we assign to 
 */
 
 // PRIMARY DATA TYPES
-var name = "Thandokuhle"; // "", ``, or '' (${} can work like a formatted string and only on backticked strings)
+var myName = "Thandokuhle"; // "", ``, or '' (${} can work like a formatted string and only on backticked strings)
 let myAge = 27;
 let weight = 55.2;
 let married = false; // lower-case
@@ -19,7 +19,7 @@ let kids = null; // used to erase the contents of a variable without deleting th
 let carModel = "Bentely Bentyga!"; // undefined (access an object that does not exist or not yet initialized or declared.)
 let binding = 7;
 const studentId = 202203673; // constant variable
-let details = `your name is ${name}, and you are ${age} years old`;
+let details = `your name is ${myName}, and you are ${age} years old`;
 typeof age;
 
 // COMPOSITE DATA TYPES (arrays and objects)
@@ -144,3 +144,6 @@ for (var i = 0; i < paragraphs.length; i++) {
 }
 console.log(firstItem);
 console.log(myList);
+
+const balanceNumberE1 = document.querySelector(".balance-number");
+balanceNumberE1.textContent = 10000;

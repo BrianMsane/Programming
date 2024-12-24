@@ -15,7 +15,11 @@ struct Student {
 };
 
 std::istream operator>>(std::istream is, Student &S){
-    S.name >> S.surname
+    S.name >> S.surname;
+}
+
+std::ostream operator<<(std::ostream os, Student &S){
+
 }
 
 void viewCidByDiease(

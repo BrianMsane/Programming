@@ -1,6 +1,6 @@
 // DATA STRUCTURES -- STRINGS
 
-let name1 = "Thando,kuhle";
+let name1 = "Thandokuhle";
 
 console.log(name1.toUpperCase());
 console.log(name1[name1.length]);
