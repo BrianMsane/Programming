@@ -1,21 +1,26 @@
 The key concepts you need to understand in javascript
 
+Guidelines
+===============
 i. camel case naming convention (firstName as opposed to snake case first_name)
 ii. comments are more like C++ comments[// and /**/]
 iii. naming rules for variables are still the same with Python
 
+Rules for naming variables
+==================
+1. Do not use keywords
+2. Be descriptive
+3. Must be alpha-numeric(start with an alphabet before any number)
+4. No spaces between words but stick to the camel case naming convention
+
 
 1. variables(const[constant which never changes once defined], var[overidable], let)
-2. data types and data structures(string, numbers, booleans, arrays, and objects)
+2. data types and data structures(string, numbers, booleans, arrays, and objects, JSON)
 3. functions(traditional functions vs arrow functions() => {})
 4. Interacting with HTML and CSS. (DOM manipulation)
-5. Operators(comparison, assignment, arithmentic and so on)
-6. String manipulation ()
+5. Operators(comparison(===, !==), assignment, arithmentic and so on)
+6. String manipulation (use the methods defined for the string class call using the dot operator)
 7. Control flow (if, else if, else, and switch statements)
-8. 
-9.
-10.
-
-
-const balanceNumberE1 = document.querySelector(".balance-number);
-balanceNumberE1.textContent = 10000;
+8. Classes and OOP
+9. 
+10. 
