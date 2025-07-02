@@ -1,4 +1,6 @@
+import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 
 public class Main {
     public static void main( String [] args){
@@ -13,7 +15,7 @@ public class Main {
         long viewsCount = 999_999_999_999L;
         char grade = 'A';
         final float  PI = 3.143F; // constants
-        double result = (double) 10 / double(3); // type casting
+        double result = (double) 10 / (double)(3); // type casting
         price++;
         ++age;
         age -= 2; //augmented operations (same as c++)
@@ -27,10 +29,10 @@ public class Main {
     // arrays
         int [] numbers = new int[5];
         int [] newNumbers = {1, 2, 3, 4, 5, 5, 6, 7}; // initialization
-        newNumbers.length
         numbers[0] = 1;
         numbers[1] = 10;
-        System.out.println(Arrays.toString(Arrays.sort(numbers)));
+        Arrays.sort(numbers);
+        System.out.println(Arrays.toString(numbers));
         System.out.println(Arrays.toString(newNumbers));
         System.out.println(newNumbers.length);
 
@@ -45,20 +47,20 @@ public class Main {
         boolean isWarm = temperature > 20 && temperature < 30;
         System.out.println(isWarm);
 
-        boolean = hasHighIncome = true;
-        boolean = hasGoodCredit = false;
-        boolean = hasCriminalRecord = true;
+        boolean hasHighIncome = true;
+        boolean hasGoodCredit = false;
+        boolean hasCriminalRecord = true;
         boolean isEligible = (hasHighIncome || hasGoodCredit) && !hasCriminalRecord;
-        System.out.println(isEligible)
+        System.out.println(isEligible);
 
 
     // if statements
      String day = "Friday";
      boolean inMood = true;
      if (day == "Friday" && inMood) {
-        System.out.println("It's a Friday so let's get coding man")
+        System.out.println("It's a Friday so let's get coding man");
      } else if (day == "Friday" && !inMood) {
-        System.out.println("Better study today man!")
+        System.out.println("Better study today man!");
      } else {
         String message = "You better read a pyschology book!";
         System.out.println(message);
@@ -67,7 +69,7 @@ public class Main {
 
     // tenary operator
     int income = 120_000;
-    String className = (income >= 200_000) ? "First Class" : "Economy";
+    String className = (income >= 200_000) ? "First Class" : "Economy"
 
     // switch statments
     switch (day){
@@ -87,7 +89,7 @@ public class Main {
     int num = scanner.nextInt();
 
     if (num % 5 == 0){
-        String response = (num % 3) ? "FizzBuzz" : "Fizz"
+        String response = (num % 3 == 0) ? "FizzBuzz" : "Fizz";
         System.out.println(response);
     } else if (num % 3 == 0){
         System.out.println("Buzz");
@@ -96,16 +98,17 @@ public class Main {
     }
 
     // For loops (better in situations when you know ahead of time the number of iterations to make)
-    for (index = 0; index < 5; index++){
+    for (int index = 0; index < 5; index++){
         System.out.print(index);
     }
 
     // while loops (better if we don't know how many iterations the code will make)
     int i = 0;
     while (i > 0){
-        System.out.print(i)
+        System.out.print(i);
         i--;
     }
+
     String input = "";
     while (!input.equals("quit")){
         System.out.print("input: ");
@@ -116,25 +119,26 @@ public class Main {
     do {
         System.out.print("input: ");
         input = scanner.next().toLowerCase();
-        if input.equals("pass")
+        if (input.equals("pass"))
             continue;
         if (input.equals("quit")){
             break;
         }
         System.out.println(input);
-    } while(!input.equals('quit'));
+    } while(!input.equals("quit"));
 
     // for..each loop (iterate over arrays or collections)
     String[] fruits = {"apple", "mango", "orange"};
     for (String fruit: fruits){
-        System.out.println(fruit)
+        System.out.println(fruit);
     }
 
     // Morgate calculator
-    final int = MONTHS_IN_YEAR = 12;
+    final int MONTHS_IN_YEAR = 12;
+    final int monthlyInterest = 9;
 
     while (true){
-        System.out.print('Principal ($1K - $1M): ')
+        System.out.print("Principal ($1K - $1M): ");
         int principal = scanner.nextInt();
         if (inputValue < 1000 && > 1_000_000){
             System.out.println("Enter a number between 1,000 and 1,000,000");
@@ -143,17 +147,19 @@ public class Main {
             while (true){
                 System.out.println("Annual Interest Rate: ");
                 int interest = scanner.nextInt();
-                if (interest > 0 && interest <= 30)
+                if (interest > 0 && interest <= 30){
                     System.out.print("Period (Years): ");
                     int years = scanner.nextInt();
-                    if (years > 0 && <= 30){
+                    if (years > 0 && years <= 30){
                         numberOfPayments = years * MONTHS_IN_YEAR;
                     } else{
                         System.out.println("Enter a value greater than 0 and less than or equals to 30");
                     }
                     // calculate and print the morgate
-                    double morgate = principal * Math.pow(1 _ monthlyInterest)
+                    double morgate = principal * Math.pow(1, monthlyInterest);
                     // break here!
+                }
+
                 else
                     System.out.println("Enter a value greater than 0 and less than or equals to 30");
                     continue;
