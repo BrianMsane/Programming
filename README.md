@@ -1,2 +1,3 @@
 # Programming
-Adding code concepts in different languages for my learning path.
+
+Learning Java and C/C++ programming languages
